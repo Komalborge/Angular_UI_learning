@@ -1,0 +1,16 @@
+body{
+    text-align: left;
+}
+table{
+    border-style: dotted;
+    border: solid;
+    background-color: bisque;
+
+}
+tbody{
+    background-color: rgb(129, 228, 244);
+    color: darkred;
+}
+button{
+    text-align: left;
+}
