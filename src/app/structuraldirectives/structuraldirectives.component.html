@@ -1,0 +1,57 @@
+<body>
+  <div>
+    <h1 style="background-color: rgb(221, 255, 0);">{{title}}</h1>
+  </div>
+  <i><h5><u>*ngIf example</u></h5></i>
+<p *ngIf="isshow">
+  <input type="checkbox" id="Developer" value="UI">
+  <label for="Developer">i am a UI Developer</label>
+</p>
+ <i style="color: red;">A UI developer is a tech professional who carries out the process of conceiving, designing, and coding.<br>
+  a user interface flow that provides the smoothest user experience possible.</i>
+  <br>
+  <br>
+  <i><h5><u>*ngFor example</u></h5></i>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Rating</th>
+            <th>Course</th>
+            <th>Fees</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let college of colleges">
+            <td>{{college.Name}}</td>
+            <td>{{college.Rating}}</td>
+            <td>{{college.Course}}</td>
+            <td>{{college.Fees}}</td>
+        </tr>
+    </tbody>
+</table>
+<i><h5><u>*ngSwitch example</u></h5></i>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <select class="form-control" (change)="getProductValue($event)" >
+              <option value="Default">Select </option>
+              <option value="IT">IT</option>
+              <option value="CS">CS</option>
+              <option value="BE">BE</option>
+              <option value="B.Tech">B.tech</option>
+          </select>
+      </div>
+      <div class="col-md-12" [ngSwitch]="selectedProduct">
+          <h2 class="text-success" *ngSwitchDefault>Please select courses!</h2>
+          <h2 class="text-success" *ngSwitchCase="'IT'">Seats are not available!</h2>
+          <h2 class="text-success" *ngSwitchCase="'CS'">Seats are available!</h2>
+          <h2 class="text-success" *ngSwitchCase="'BE'">Admission full!</h2>
+          <h2 class="text-success" *ngSwitchCase="'B.tech'">Best luck next time!</h2>
+
+      </div>
+  </div>
+</div>
+
+  
