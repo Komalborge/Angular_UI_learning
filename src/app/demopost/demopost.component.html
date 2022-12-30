@@ -1,0 +1,28 @@
+<p>demopost works!</p>
+<br>
+<div>
+    <div>
+        <div>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th> ID</th>
+                        <th>Title</th>
+                        <th>Body</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of arrPosts">
+                        <td>{{p.userId}}</td>
+                        <td><a routerLink="#">{{p. id}}</a></td>
+                        <td>{{p.title}}</td>
+                        <td>{{p. body}}</td>
+
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+    </div>
+</div>
