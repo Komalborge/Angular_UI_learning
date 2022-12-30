@@ -1,0 +1,27 @@
+
+<h3 style="background-color: rgb(15, 229, 229);">Assignment on Add & Remove Data :-</h3>
+<i><h4 style="background-color: red;">Employee Details:-</h4><i>
+<form (ngSubmit)="onsubmit()" style="background-color: url;">
+    <div class="container">
+        <div class="form-row" *ngFor="let obj of dataarray" let i="index">
+            <div class="form-group col-md-4">
+                <b><label>Name</label></b>
+                <input type="text" class="form-control" name="name{{i}}" [(ngModel)]="obj.name">
+            </div>
+            <div class="form-group col-md-4">
+                <b><label>Salary</label></b>
+                <input type="text" class="form-control" name="salary{{i}}" [(ngModel)]="obj.salary">
+            </div>
+            <div class="form-group col-md-2">
+                <b><label>ID</label></b>
+                <input type="text" class="form-control" name="id{{i}}" [(ngModel)]="obj.id">
+            </div>
+            <br>
+            <div class="form-group col-md-2" *ngIf="1!=0">
+                <span (click)="removeform(i)" class="btn btn-danger">Remove</span>
+            </div>
+            <br>
+        </div>
+        <div (click)="addform()" class="btn btn-success">Add</div> &nbsp;
+        <button class="btn-btn-primary">Submit</button>
+    </div>
