@@ -1,0 +1,15 @@
+.card{
+    display: inline-block;
+    margin: 15px 10px 10px;
+    width: 200px;
+    height: 200px;
+}
+h5{
+    text-align: center;
+}
+.btn{
+    margin-left: 70px;
+}
+p{
+    font-size: large;
+}

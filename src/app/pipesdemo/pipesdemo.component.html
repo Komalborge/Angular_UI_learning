@@ -1,0 +1,39 @@
+<h2><i>Built-in Pipes:</i></h2>
+ 
+<h3>Date:</h3>
+<div>
+    <ul>
+    Short Date :   {{todaysDate | date:'shortDate'}}  <br>
+    Date in M/dd/YYYY :   {{todaysDate | date: 'M/dd/yyyy'}} <br>
+    Full Date  :  {{todaysDate | date:'fullDate'}}
+    </ul>
+</div> 
+
+<h3>Chain :</h3>
+<ul>
+    Uppercase:  {{todaysDate | date:'fullDate' | uppercase}} <br>
+    lowerercase:  {{todaysDate | date:'fullDate' | lowercase}}
+</ul>
+   
+<h3>Async:</h3>
+<ul>
+    get values : {{obser| async}}
+</ul>
+
+<h3>Currency:</h3>
+<ul>
+    
+    Currency :{{price | currency:'INR'}}<br>
+    Currency :{{price | currency:'USD'}}<br>
+    Currency :   {{price | currency:'EUR'}}
+</ul>
+<h3>json</h3>
+<ul>
+{{obj| json}} <br>
+{{obj2| json}}  <br>
+{{obj3 | json}} <br>
+</ul>
+<h3>Custom:</h3>
+<ul>
+    {{price | count}}<br>
+</ul>
