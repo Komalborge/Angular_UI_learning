@@ -1,0 +1,18 @@
+
+body{
+    text-align: left;
+    border-style: solid;
+    line-height: 2ch;
+    padding-left: 0.5cm;
+    background-color: rgb(144, 196, 242);
+}
+table{
+    border-style: dotted;
+    border-color: black;
+    border-width: 0em;
+    width: max-content;
+    border-start-end-radius: 1cm;
+    border-radius: 0cm;
+    background-color: blanchedalmond;
+ 
+}
