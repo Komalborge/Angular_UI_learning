@@ -1,0 +1,21 @@
+.container{
+    border: double 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+.card-body{
+    text-align: center;
+    color: rgb(22, 22, 22);
+    border-color: blue;
+    font-size: 30px; 
+    font-weight: bolder;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+    box-shadow: 0 0 13px #ff000021;
+}
+span{
+    font-size: 20px;
+    font-weight: bolder;
+}
