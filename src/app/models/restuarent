@@ -1,0 +1,7 @@
+export class college {
+    Name: string;
+    Rating: string;
+    Courses: string;
+    Fees: string;
+    Department:string;
+}
