@@ -15,7 +15,7 @@ export class PostService {
   getPosts():Observable<any>{
     // let newAPI= devAPIUrl;
     //  return this.httpClient.get('${this.newAPI}posts');
-
+   
      let posts='posts';
      return this.httpClient.get(this.devAPIUrl + posts)
   }

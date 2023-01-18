@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CountPipe implements PipeTransform {
 
-  transform(val:number): number {
-    return val.toString().length;
+  transform(value: any, ...args: any[]): any {
+    return null;
   }
+
 
 }

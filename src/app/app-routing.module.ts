@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AboutusComponent } from './aboutus/aboutus.component';
+import { AdduserComponent } from './adduser/adduser.component';
 import { AuthGuard } from './auth.guard';
 import { ContactusComponent } from './contactus/contactus.component';
 import { DemopostComponent } from './demopost/demopost.component';
@@ -13,6 +14,7 @@ import { ProductComponent } from './product/product.component';
 import { TabletComponent } from './product/tablet/tablet.component';
 import { TvComponent } from './product/tv/tv.component';
 import { WashingmachineComponent } from './product/washingmachine/washingmachine.component';
+import { Unsavedchangesguard } from './unsavedchangesguard.guard';
 
 const routes: Routes = [
    //{path:'', redirectTo: 'login', pathMatch:'full'},
@@ -54,6 +56,7 @@ const routes: Routes = [
   ]},
 {path:'post', component: DemopostComponent},
   {path:'postdetails/id', component:PostdetailsComponent},// to go on perticular page
+  {path: 'adduser', component: AdduserComponent, canDeactivate: [Unsavedchangesguard]},
   {path:'**', component:PagenotfoundComponent}
 
 ];

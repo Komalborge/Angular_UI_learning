@@ -49,6 +49,13 @@ import { PostdetailsComponent } from './postdetails/postdetails.component';
 import { GenderpipesComponent } from './genderpipes/genderpipes.component';
 import { Reactiveassign1Component } from './reactiveassign1/reactiveassign1.component';
 import { Reactiveassign2Component } from './reactiveassign2/reactiveassign2.component';
+import { PipesassignComponent } from './pipesassign/pipesassign.component';
+import { FirebaseComponent } from './firebase/firebase.component';
+import { RapidcompComponent } from './rapidcomp/rapidcomp.component';
+import { ManageproductComponent } from './manageproduct/manageproduct.component';
+import { AdduserComponent } from './adduser/adduser.component';
+
+
 
 @NgModule({
   declarations: [
@@ -96,14 +103,21 @@ import { Reactiveassign2Component } from './reactiveassign2/reactiveassign2.comp
     PostdetailsComponent,
     GenderpipesComponent,
     Reactiveassign1Component,
-    Reactiveassign2Component
+    Reactiveassign2Component,
+    PipesassignComponent,
+    FirebaseComponent,
+    RapidcompComponent,
+    ManageproductComponent,
+    AdduserComponent
+  
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
     ReactiveFormsModule ,
-    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,11 @@
+.row{
+    border: double 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 19px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: initial;
+    color: brown;
+    border-radius: 15px;
+    box-shadow: 10px;
+}

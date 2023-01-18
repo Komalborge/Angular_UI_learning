@@ -1,0 +1,19 @@
+table{
+    border-style: dashed;
+    border-color: rgb(246, 180, 180);
+    background-color: rgb(255, 249, 249);
+    color: black;
+
+}
+
+input{
+    font-size: medium;
+}
+
+form,navbar,div{
+    background-color: antiquewhite;
+}
+thead{
+    background-color: black;
+    color: white;
+}
